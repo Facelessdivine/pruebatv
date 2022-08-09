@@ -1,7 +1,6 @@
 package com.example.pruebatv;
 
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.fragment.app.FragmentActivity;

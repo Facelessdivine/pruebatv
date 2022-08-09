@@ -1,16 +1,13 @@
 package com.example.pruebatv;
 
 import android.os.Bundle;
-
 import androidx.leanback.app.BrowseSupportFragment;
 import androidx.leanback.widget.ArrayObjectAdapter;
 import androidx.leanback.widget.HeaderItem;
 import androidx.leanback.widget.ListRow;
 import androidx.leanback.widget.ListRowPresenter;
-
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +26,7 @@ public class FragmentPrincipal extends BrowseSupportFragment {
     private void leerDatos() {
         String json = Utils.loadJSONFromResource(getActivity(), R.raw.movies);
         Gson gson = new Gson();
-        Type collection = new TypeToken<ArrayList<Movie>>() {}.getType();
+        Type collection = new TypeToken<ArrayList<Movie>>(){}.getType();
         mMovies = gson.fromJson(json, collection);
     }
 
