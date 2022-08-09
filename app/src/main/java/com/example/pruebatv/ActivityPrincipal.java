@@ -4,7 +4,9 @@ package com.example.pruebatv;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class ActivityPrincipal extends Activity
+import androidx.fragment.app.FragmentActivity;
+
+public class ActivityPrincipal extends FragmentActivity
 {
     @Override
     protected void onCreate(Bundle savedInstanceState){

@@ -4,7 +4,7 @@
     android:id="@+id/main_browse_fragment"
     android:name="com.example.mitvprueba.FragmentPrincipal"
     tools:context=".ActivityPrincipal"
-tools:deviceIds="tv"
+    tools:deviceIds="tv"
     tools:ignore="MergeRootFrame"
     android:orientation="vertical"
     android:layout_width="match_parent"
