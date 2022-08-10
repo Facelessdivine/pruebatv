@@ -24,7 +24,8 @@ public class CardPresenter extends Presenter {
         }
 
         public void updateCardViewHolder(Context context, String link) {
-            Picasso.with(context).load(link).resize(210, 210).centerCrop().into(mCardView.getMainImageView());
+            Picasso.with(context).load(link).resize(210, 210).centerCrop().
+                    into(mCardView.getMainImageView());
         }
     }
 

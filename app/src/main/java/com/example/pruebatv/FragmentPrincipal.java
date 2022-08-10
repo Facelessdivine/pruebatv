@@ -57,7 +57,7 @@ public class FragmentPrincipal extends BrowseSupportFragment {
         setAdapter(rowsAdapter);
     }
 
-    private List<String> getCategoias() {
+    private List<String> getCategorias() {
         if (mMovies == null)
             return null;
         List<String> categories = new ArrayList<String>();
