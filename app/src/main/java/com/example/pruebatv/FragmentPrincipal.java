@@ -39,7 +39,7 @@ public class FragmentPrincipal extends BrowseSupportFragment {
     private void cargarListas() {
         ArrayObjectAdapter rowsAdapter = new ArrayObjectAdapter(new ListRowPresenter());
         CardPresenter presenter = new CardPresenter();
-        List<String> categories = getCategoias();
+        List<String> categories = getCategorias();
 
         if (categories == null || categories.isEmpty())
             return;
