@@ -44,7 +44,6 @@ public class CardPresenter extends Presenter {
             ((ViewHolder) viewHolder).mCardView.setMainImageDimensions(210, 210);
             ((ViewHolder) viewHolder).updateCardViewHolder(((ViewHolder) viewHolder).getCardView().getContext()
                     , movie.getPoster());
-
         }
     }
 

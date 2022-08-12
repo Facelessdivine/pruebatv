@@ -39,13 +39,14 @@ public class FragmentPrincipal extends BrowseSupportFragment {
     private void cargarListas() {
         ArrayObjectAdapter rowsAdapter = new ArrayObjectAdapter(new ListRowPresenter());
         CardPresenter presenter = new CardPresenter();
-        List<String> categories = getCategoias();
+        List<String> categories = getCategorias();
 
         if (categories == null || categories.isEmpty())
             return;
         for (String categoria : categories) {
             ArrayObjectAdapter listRowAdapter = new ArrayObjectAdapter(presenter);
             for (Movie movie : mMovies) {
+                System.out.println(movie.getPoster());
                 if (categoria.equalsIgnoreCase(movie.getCategoria()))
                     listRowAdapter.add(movie);
             }

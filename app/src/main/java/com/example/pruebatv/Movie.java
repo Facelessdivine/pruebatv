@@ -51,14 +51,15 @@ public class Movie {
     public void setPoster(String poster) {
         this.poster = poster;
     }
+
     @Override
-    public String toString(){
-        return "Movie {"+
-                "titulo=\'"+ titulo + "\'"+
-                ", descripcion=\'"+ descripcion + "\'"+
-                ", videoUrl=\'"+ videoUrl + "\'"+
-                ", categoria=\'"+ categoria + "\'"+
-                ", poster=\'"+ poster + "\'"+
-                "]";
+    public String toString() {
+        return "Movie{" +
+                "titulo='" + titulo + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", videoUrl='" + videoUrl + '\'' +
+                ", categoria='" + categoria + '\'' +
+                ", poster='" + poster + '\'' +
+                '}';
     }
 }
